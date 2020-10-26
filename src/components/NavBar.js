@@ -1,15 +1,22 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
-import Form from 'react-bootstrap/Form'
-import FormControl from 'react-bootstrap/FormControl'
-import Button from 'react-bootstrap/Button'
-import styled from 'styled-components'
 
 function NavBar() {
+    const [atTop, setAtTop] = useState(true);
+    
+    useEffect(() => {
+        if(window.location.pathname === '/'){
+            window.addEventListener('scroll',() => window.pageYOffset > 20 ? setAtTop(false) : setAtTop(true))
+        }else{
+            setAtTop(false)
+        }
+
+    },[atTop])
+
     return (
-        <Navbar bg="dark" variant="dark" expand="lg" >
+        <Navbar bg="dark" variant="dark" expand="lg">
             <Navbar.Brand href="#home">Heg's Fab and Design</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">

@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Home() {
   return (
     <>
-      <SocialMediaNav />
+      {/* <SocialMediaNav /> */}
       <NavBar/>
       <SlideShow />
       <div>Hello world!!!</div>

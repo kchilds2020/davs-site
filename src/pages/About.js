@@ -5,7 +5,7 @@ import SocialMediaNav from '../components/SocialMediaNav'
 
 export default function About() {
   return (<>
-            <SocialMediaNav />
+        {/*     <SocialMediaNav /> */}
             <NavBar />
             <div>About</div>
             
