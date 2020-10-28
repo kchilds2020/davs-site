@@ -1,9 +1,7 @@
 import React, {useState} from 'react'
-import Carousel from 'react-bootstrap/Carousel'
-import Slide1 from '../images/slide1.jpg'
-import Slide2 from '../images/slide2.jpg'
-import Slide3 from '../images/slide3.jpg'
+import background from '../images/background.jpg'
 import styled from  'styled-components'
+import {Header, Title, TagLine, CallToAction, FDRow} from './styles/general'
 
 function SlideShow() {
     const [index, setIndex] = useState(0);
@@ -13,54 +11,72 @@ function SlideShow() {
   };
 
   return (
-    <Container>
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-
-      <Carousel.Item interval={5000}>
-      <Carousel.Caption style={{}}>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-        <img
-          className="d-block w-100"
-          src={Slide1}
-          alt="First slide"
-        />
-        
-      </Carousel.Item>
-      <Carousel.Item interval={5000}>
-        <img
-          className="d-block w-100"
-          src={Slide2}
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={5000}>
-        <img
-          className="d-block w-100"
-          src={Slide3}
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-    </Container>
+        <>
+        <Header>
+            <div style={{height: '100px'}}></div>
+            <Background src = {background}/>
+            <Title>Heg's Fab and Design</Title>
+            <TagLine>Custom Designs Made Simple</TagLine>
+            <FDRow>
+                <CallToAction onClick = {() => {window.location.href='/contact'}}>Contact</CallToAction>
+                <CallToAction onClick = {() => {window.location.href = '/services'}}>Services</CallToAction>
+                
+            </FDRow>
+        </Header>
+        <Section> 
+            <SecInfo style={{backgroundColor: 'white'}}>
+            {/* <Logo src={picture}/> */}
+            </SecInfo>
+            <SecInfo>
+            <h1>About</h1>
+            <Paragraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac urna sapien. Vivamus tempor finibus felis, vel facilisis elit volutpat ac. Nulla nisl nisl, vestibulum sed ullamcorper id, placerat sit amet urna. Cras vitae orci justo. Maecenas non sapien accumsan, varius diam vitae, fringilla quam.
+            </Paragraph>
+            </SecInfo>
+        </Section>
+        <SecDiv></SecDiv>
+        </>
     )
-}
+  }
 
-const Container = styled.div`
-  width: 100%;
+const SecDiv = styled.div`
+    height: 300px;
+`
+
+const Paragraph = styled.p`
+    font-size: 20px;
+`
+
+const Background = styled.img`
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+`
+
+const Logo = styled.img`
+    width: 100%;
+`
+
+const Section = styled.div`
+    background-color: rgb(64, 72, 81);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+`
+
+const SecInfo = styled.div`
+    width: 500px;
+    height: 100%;
+    padding: 10px;
+    background-color: rgb(52, 58, 64);
+    color: white;
+    border-radius: 4px;
+    height: auto;
 `
 
 export default SlideShow
