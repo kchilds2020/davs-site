@@ -1,12 +1,12 @@
 import React from "react"
-import NavBar from '../components/NavBar'
+import NavigationBar from '../components/NavigationBar'
 import SocialMediaNav from '../components/SocialMediaNav'
 
 
-export default function About() {
+export default function Services() {
   return (<>
         {/*     <SocialMediaNav /> */}
-            <NavBar />
+            <NavigationBar />
             <div>About</div>
             
             

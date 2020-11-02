@@ -18,8 +18,8 @@ function SlideShow() {
             <Title>Heg's Fab and Design</Title>
             <TagLine>Custom Designs Made Simple</TagLine>
             <FDRow>
-                <CallToAction onClick = {() => {window.location.href='/contact'}}>Contact</CallToAction>
-                <CallToAction onClick = {() => {window.location.href = '/services'}}>Services</CallToAction>
+                <CallToAction onClick = {() => {window.location.href='/Contact'}}>Contact</CallToAction>
+                <CallToAction onClick = {() => {window.location.href = '/Services'}}>Services</CallToAction>
                 
             </FDRow>
         </Header>

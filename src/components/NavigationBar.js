@@ -26,8 +26,8 @@ const NavigationBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
                         <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/services">Services</Nav.Link>
-                        <Nav.Link href="/contact">Contact</Nav.Link>
+                        <Nav.Link href="/Services">Services</Nav.Link>
+                        <Nav.Link href="/Contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -39,8 +39,8 @@ const NavigationBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
                         <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/services">Services</Nav.Link>
-                        <Nav.Link href="/contact">Contact</Nav.Link>
+                        <Nav.Link href="/Services">Services</Nav.Link>
+                        <Nav.Link href="/Contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
