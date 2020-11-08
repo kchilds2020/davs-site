@@ -1,14 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
 import background from '../images/background.jpg'
 import styled from  'styled-components'
 import {Header, Title, TagLine, CallToAction, FDRow} from './styles/general'
 
 function SlideShow() {
-    const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
 
   return (
         <>
@@ -56,9 +51,6 @@ const Background = styled.img`
     object-fit: cover;
 `
 
-const Logo = styled.img`
-    width: 100%;
-`
 
 const Section = styled.div`
     background-color: rgb(64, 72, 81);

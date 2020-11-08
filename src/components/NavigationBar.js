@@ -1,9 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import styled from 'styled-components'
-//import logo from '../images/logo.png'
 
 const NavigationBar = () => {
 
@@ -47,10 +44,5 @@ const NavigationBar = () => {
     )
 }
 
-const Logo = styled.img`
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-`
 
 export default NavigationBar
