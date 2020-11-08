@@ -6,7 +6,7 @@ import IMG from '../images/contact-img.jpg'
 
 function Contact() {
     return (
-        <div>
+        <div style={{fontFamily: 'Raleway'}}>
             <NavigationBar />
             <SectionHeader>
               <Image></Image>

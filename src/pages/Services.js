@@ -7,7 +7,7 @@ import {FcShipped} from 'react-icons/Fc'
 
 export default function Services() {
   return (
-          <div>
+          <div style={{position: 'relative', fontFamily:'Raleway'}}>
             <NavigationBar />
              <SectionHeader>
                 <Image></Image>
@@ -61,7 +61,6 @@ const Section = styled.div`
 const SectionHeader = styled.div`
   height: 300px;
   width: 100%;
-  z-index: -200;
 `
 const Image = styled.div`
   background-image: url(${IMG});

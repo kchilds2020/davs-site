@@ -49,6 +49,7 @@ const Background = styled.img`
     top: 0;
     z-index: -1;
     object-fit: cover;
+    filter: brightness(45%);
 `
 
 

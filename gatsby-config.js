@@ -6,5 +6,16 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `big shoulders stencil text\:800`,
+          `raleway`
+        ],
+        display: 'swap'
+      }
+    }
+  ]
 }

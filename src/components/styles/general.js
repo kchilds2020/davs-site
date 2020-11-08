@@ -7,6 +7,7 @@ export const Header = styled.div`
     align-items:center;
     padding: 20px;
     height: 100vh;
+    /* filter: brightness(40%); */
 `
 
 const colors = keyframes`
@@ -21,17 +22,20 @@ const colors = keyframes`
 `;
 
 export const Title = styled.h2`
-    font-family: 'Viga', sans-serif;
+    font-family: 'Big Shoulders Stencil Text';
     font-size: 72px;
     text-transform: uppercase;
     text-align: center;
-    color: white;
+    color: transparent;
     letter-spacing: 10px;
-    animation: ${colors} 10s linear infinite;   
+    /* animation: ${colors} 10s linear infinite;    */
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
 
     @media (max-width: 600px) {
     font-size: 48px;
     letter-spacing: 5px;
+	-webkit-text-stroke-width: 1px;
   }
 
 
@@ -40,11 +44,10 @@ export const Title = styled.h2`
 
 
 export const TagLine = styled.h4`
-    font-family: 'Viga', sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: white;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 `
 
 export const CallToAction = styled.button`
