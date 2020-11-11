@@ -2,10 +2,14 @@ import React from 'react'
 import NavigationBar from '../components/NavigationBar'
 import styled from 'styled-components';
 import IMG from '../images/contact-img.jpg'
+import Helmet from 'react-helmet'
 
 
 function Contact() {
+
     return (
+      <>
+      <Helmet title="Contact" defer={false} />
         <div style={{fontFamily: 'Raleway'}}>
             <NavigationBar />
             <SectionHeader>
@@ -14,6 +18,7 @@ function Contact() {
               </SectionHeader>
               <div>Test</div>     
         </div>
+        </>
     )
 }
 

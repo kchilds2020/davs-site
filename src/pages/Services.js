@@ -3,10 +3,13 @@ import NavigationBar from '../components/NavigationBar'
 import IMG from '../images/section-img.jpg'
 import styled from 'styled-components'
 import {FcShipped} from 'react-icons/Fc'
+import Helmet from 'react-helmet'
 
 
 export default function Services() {
   return (
+        <>
+          <Helmet title="Services" defer={false} />
           <div style={{position: 'relative', fontFamily:'Raleway'}}>
             <NavigationBar />
              <SectionHeader>
@@ -29,6 +32,7 @@ export default function Services() {
             </Section> 
             
           </div>
+        </>
           )
 }
 
